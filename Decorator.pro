@@ -9,11 +9,16 @@ CONFIG -= app_bundle
 
 SOURCES += \
         beverage.cpp \
+        condmentdecorator.cpp \
         darkroast.cpp \
         decaf.cpp \
         espresso.cpp \
         houseblend.cpp \
-        main.cpp
+        main.cpp \
+        milk.cpp \
+        mocha.cpp \
+        soy.cpp \
+        whip.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -22,7 +27,12 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     beverage.h \
+    condmentdecorator.h \
     darkroast.h \
     decaf.h \
     espresso.h \
-    houseblend.h
+    houseblend.h \
+    milk.h \
+    mocha.h \
+    soy.h \
+    whip.h
