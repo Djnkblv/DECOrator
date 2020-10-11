@@ -9,6 +9,10 @@ CONFIG -= app_bundle
 
 SOURCES += \
         beverage.cpp \
+        darkroast.cpp \
+        decaf.cpp \
+        espresso.cpp \
+        houseblend.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -17,4 +21,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    beverage.h
+    beverage.h \
+    darkroast.h \
+    decaf.h \
+    espresso.h \
+    houseblend.h
